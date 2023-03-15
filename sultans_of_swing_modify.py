@@ -5,6 +5,8 @@ import pyaudacity as pa
 input_mp3 = "sultans_of_swing.mp3"
 basename = input_mp3.replace(".mp3", "")
 
+# see here which parameters exist:
+# https://manual.audacityteam.org/man/scripting_reference.html
 distortion_types = [
     "Hard Clipping",
     "Soft Clipping",
