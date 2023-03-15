@@ -1,0 +1,13 @@
+import pyaudacity as pa
+pa.do('Import2: Filename="/home/gspusi/Music/aufnahmen/sultans_of_swing.mp3"')
+pa.do('SelectTime: Start="54.5" End="100"')
+pa.do('Delete')
+pa.do('SelectTime: Start="0" End="2.6"')
+pa.do('Delete')
+pa.do('SelectTracks')
+pa.do('SelectAll')
+pa.do('SelAllTracks')
+pa.do('Normalize')
+pa.do('Compressor: Threshold=-20')
+pa.do('Distortion')
+pa.do('Export2: Filename="/home/gspusi/Music/aufnahmen/sultans_of_swing_pyaudacity.mp3"')
