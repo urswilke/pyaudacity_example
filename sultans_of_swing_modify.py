@@ -5,8 +5,20 @@ import pyaudacity as pa
 input_mp3 = "sultans_of_swing.mp3"
 basename = input_mp3.replace(".mp3", "")
 
-
-for s in ["Hard Clipping", "Soft Clipping", "Soft Overdrive", "Medium Overdrive", "Hard Overdrive", "Cubic Curve (odd harmonics)", "Even Harmonics", "Expand and Compress", "Leveller", "Rectifier Distortion", "Hard Limiter 1413"]:
+distortion_types = [
+    "Hard Clipping",
+    "Soft Clipping",
+    "Soft Overdrive",
+    "Medium Overdrive",
+    # "Hard Overdrive",
+    "Cubic Curve (odd harmonics)",
+    # "Even Harmonics", 
+    # "Expand and Compress",
+    "Leveller",
+    # "Rectifier Distortion",
+    "Hard Limiter 1413",
+]
+for s in distortion_types:
     pa.do('Import2: Filename="' + input_mp3 + '"')
     pa.do('SelectTime: Start="54.5" End="100"')
     pa.do('Delete')
