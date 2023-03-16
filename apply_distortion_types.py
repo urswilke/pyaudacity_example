@@ -1,4 +1,6 @@
 # start audacity from within the folder of this script before!
+# (being in this directory), enter from the command line:
+# audacity &
 from pyaudacity import do
 
 # put the name of your audio file in this folder:
